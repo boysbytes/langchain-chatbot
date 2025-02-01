@@ -5,13 +5,13 @@ Built using the Langchain framework and Ollama, this chatbot helps me explore th
 
 ### Key Features
 - **Context memory:** The chatbot remembers past conversations, so it gives more relevant responses.
-- **Customization:** If you see DeepSeek R1, you can choose to show or hide its thinking using the `/toggle_thoughts` command.
+- **Customization:** If you use DeepSeek R1, you can choose to show or hide its thinking using the `/toggle_thoughts` command.
 
 ## Installation
 
 ### Prerequisites:
 - Docker Desktop for Windows
-- WSL
+- Windows Subsystem for Linux (WSL)
 - Internet connection
 - At least 15GB of storage
 
@@ -54,6 +54,12 @@ Follow this procedure to install.
 1. Access the chatbot: `http://localhost:3000`
 
 2. By default, its thinking process is hidden. You can see its thinking process by sending this command: `/toggle_thoughts`
+
+3. When you're done, stop and clean-up.
+
+    ```bash
+    docker-compose down
+    ```
 
 
 ## Configuration
